@@ -7,44 +7,9 @@
 
 float charge(int train_num,int num_of_seats)
 {
-		if (train_num==1001)
-	{
-		return(5000.0*num_of_seats);
-	}
-	if (train_num==1002)
-	{
-		return(5000.0*num_of_seats);
-	}
-	if (train_num==1003)
-	{
-		return(4500.0*num_of_seats);
-	}
-	if (train_num==1004)
-	{
-		return(4500.0*num_of_seats);
-	}
-	if (train_num==1005)
-	{
-		return(4000.0*num_of_seats);
-	}
-	if (train_num==1006)
-	{
-		return(4000.0*num_of_seats);
-	}
-	if (train_num==1007)
-	{
-		return(3500.0*num_of_seats);
-	}
-	if (train_num==1008)
-	{
-		return(3500.0*num_of_seats);
-	}
-	if (train_num==1009)
-	{
-		return(6000.0*num_of_seats);
-	}
-	if (train_num==1010)
-	{
-		return(6000.0*num_of_seats);
+	float charges[10] = {5000.0, 5000.0, 4500.0, 4500.0, 4000.0, 4000.0, 3500.0, 3500.0, 6000.0, 6000.0};
+	int idx = train_num -1000;
+	if ((idx) < 10){
+		return charges[idx] * num_of_seats;
 	}
 }
